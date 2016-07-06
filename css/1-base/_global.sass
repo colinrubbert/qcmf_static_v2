@@ -1,0 +1,36 @@
+// Global Styling Settings
+
+// Containers
+.container
+  width: 80%
+  margin: 0 auto
+
+// Buttons
+
+.button
+  width: 160px
+  padding: 10px
+  font-size: 20px
+  line-height: 20px
+  border-radius: 3px
+  border: none
+  background-color: $divider-color
+  color: $primary-text-color
+  text-decoration: none
+  cursor: pointer
+  transition: .3s ease-in-out
+  &:hover
+    background-color: darken($divider-color, 20%)
+    transform: scale(1.1)
+
+.primary-button
+  background-color: $primary-button
+  color: $secondary-text-color
+  &:hover
+    background-color: $primary-button-hover
+
+.secondary-button
+  background-color: $secondary-button
+  color: $secondary-text-color
+  &:hover
+    background: $secondary-button-hover

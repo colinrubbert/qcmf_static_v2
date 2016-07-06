@@ -1,0 +1,190 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+*, html {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: Roboto, "Helvetica Nueue", Helvetica, sans-serif;
+}
+
+body, html, h1, h2, h3, h4, h5, h6, p,
+.huge, .x-large, .large, .medium, .small, .x-small {
+  margin: 0;
+  padding: 0;
+}
+
+.huge, h1 {
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.x-large, h2 {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.large, h3 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.medium, h4 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.small, h5 {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.x-small, h6 {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+em, .text-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button {
+  width: 160px;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: #f3f3f3;
+  color: #313335;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.button:hover {
+  background-color: silver;
+  transform: scale(1.1);
+}
+
+.primary-button {
+  background-color: #446CB3;
+  color: #fff;
+}
+
+.primary-button:hover {
+  background-color: #283f69;
+}
+
+.secondary-button {
+  background-color: #FE2B30;
+  color: #fff;
+}
+
+.secondary-button:hover {
+  background: #c20105;
+}
+
+#navigation {
+  width: 100%;
+  height: 80px;
+}
+
+.navigation-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.brand-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.brand-image {
+  height: 60px;
+  width: auto;
+}
+
+.brand-title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: 20px;
+}
+
+.navigation-links-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #446CB3;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 28px 0 28px 15px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #FE2B30;
+  transition: .3s ease-in-out;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: url("../images/industrial-sink.jpg") 50% 25% no-repeat;
+  background-size: cover;
+  min-height: 300px;
+}
+
+.hero-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-title {
+  color: #fff;
+  padding: 20px 0 10px;
+}
+
+.hero-description {
+  color: #fff;
+  padding: 20px 0 10px;
+}
+
+.hero-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 60%;
+}
