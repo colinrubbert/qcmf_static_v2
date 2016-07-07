@@ -9,7 +9,7 @@
   min-height: 300px
 
 .hero-wrapper
-  width: 60%
+  width: 80%
   margin: 0 auto
   display: flex
   flex-direction: column
@@ -20,10 +20,14 @@
 .hero-title
   color: $secondary-text-color
   padding: 20px 0 10px
+  font-size: 36px
+  line-height: 36px
 
 .hero-description
   color: $secondary-text-color
   padding: 20px 0 10px
+  font-size: 24px
+  line-height: 24px
 
 .hero-button-wrapper
   display: flex
@@ -32,3 +36,34 @@
   justify-content: space-around
   margin: 20px auto
   width: 60%
+
+// Media Queries
+@media screen and (min-width: $desktop-breakpoint)
+  #hero
+    min-height: 500px
+
+  .hero-wrapper
+    width: 60%
+
+@media screen and (max-width: $tablet-breakpoint)
+  .hero-wrapper
+    width: 80%
+
+  .hero-button-wrapper
+    width: 100%
+
+@media screen and (max-width: $mobile-breakpoint)
+  .hero-wrapper
+    width: 95%
+
+  .hero-title
+    color: $secondary-text-color
+    padding: 20px 0 10px
+    font-size: 30px
+    line-height: 30px
+
+  .hero-description
+    color: $secondary-text-color
+    padding: 20px 0 10px
+    font-size: 18px
+    line-height: 18px

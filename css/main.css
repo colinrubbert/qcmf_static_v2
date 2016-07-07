@@ -60,6 +60,12 @@ em, .text-italic {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .button {
   width: 160px;
   padding: 10px;
@@ -89,17 +95,17 @@ em, .text-italic {
 }
 
 .secondary-button {
-  background-color: #FE2B30;
+  background-color: #ec4a59;
   color: #fff;
 }
 
 .secondary-button:hover {
-  background: #c20105;
+  background: #bc1423;
 }
 
 #navigation {
   width: 100%;
-  height: 80px;
+  min-height: 80px;
 }
 
 .navigation-wrapper {
@@ -146,8 +152,55 @@ em, .text-italic {
 }
 
 .nav-link:hover {
-  color: #FE2B30;
+  color: #ec4a59;
   transition: .3s ease-in-out;
+}
+
+.navigation-mobile-toggle {
+  height: 30px;
+  margin: 25px 0;
+  display: none;
+}
+
+.navigation-mobile-toggle-image {
+  height: 30px;
+  width: auto;
+}
+
+#mobile-navigation {
+  position: fixed;
+  width: 100%;
+  display: none;
+  background: #fff;
+}
+
+.mobile-navigation-wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.mobile-navigation-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .brand-wrapper {
+    margin-left: 20px;
+  }
+  .brand-title {
+    display: none;
+  }
+  .navigation-links-wrapper {
+    display: none;
+  }
+  .navigation-mobile-toggle {
+    display: block;
+    margin-right: 20px;
+    text-align: right;
+  }
 }
 
 #hero {
@@ -161,7 +214,7 @@ em, .text-italic {
 }
 
 .hero-wrapper {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -173,11 +226,15 @@ em, .text-italic {
 .hero-title {
   color: #fff;
   padding: 20px 0 10px;
+  font-size: 36px;
+  line-height: 36px;
 }
 
 .hero-description {
   color: #fff;
   padding: 20px 0 10px;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .hero-button-wrapper {
@@ -187,4 +244,94 @@ em, .text-italic {
   justify-content: space-around;
   margin: 20px auto;
   width: 60%;
+}
+
+@media screen and (min-width: 1200px) {
+  #hero {
+    min-height: 500px;
+  }
+  .hero-wrapper {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-wrapper {
+    width: 80%;
+  }
+  .hero-button-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-wrapper {
+    width: 95%;
+  }
+  .hero-title {
+    color: #fff;
+    padding: 20px 0 10px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .hero-description {
+    color: #fff;
+    padding: 20px 0 10px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+#cta {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 80px;
+  background-color: #446CB3;
+  color: #fff;
+}
+
+.cta-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cta-title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 300;
+  margin: 16px 10px;
+}
+
+.cta-link {
+  font-size: 48px;
+  line-height: 48px;
+  margin: 16px 10px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.cta-link:hover {
+  color: #ec4a59;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 800px) {
+  .cta-wrapper {
+    flex-direction: column;
+  }
+  .cta-title {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 10px auto 5px auto;
+  }
+  .cta-link {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 5px auto 10px auto;
+  }
 }

@@ -1,8 +1,11 @@
 // Navigation Styling Section
 
+
+// Desktop Navigation
+
 #navigation
   width: 100%
-  height: 80px
+  min-height: 80px
 
 .navigation-wrapper
   display: flex
@@ -43,3 +46,49 @@
   &:hover
     color: $secondary-color
     transition: .3s ease-in-out
+
+.navigation-mobile-toggle
+  height: 30px
+  margin: 25px 0
+  display: none
+
+.navigation-mobile-toggle-image
+  height: 30px
+  width: auto
+
+// Mobile navigation
+#mobile-navigation
+  position: fixed
+  width: 100%
+  display: none
+  background: $white
+
+
+.mobile-navigation-wrapper
+  width: 100%
+  height: 100vh
+
+.mobile-navigation-links-wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: center
+
+
+// Media Queries
+
+@media screen and (max-width: $tablet-breakpoint)
+  // Desktop Navigation
+  .brand-wrapper
+    margin-left: 20px
+
+  .brand-title
+    display: none
+
+  .navigation-links-wrapper
+    display: none
+
+  .navigation-mobile-toggle
+    display: block
+    margin-right: 20px
+    text-align: right
