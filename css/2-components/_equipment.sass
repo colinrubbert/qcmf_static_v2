@@ -1,0 +1,57 @@
+// Equipment Section Styling
+
+#equipment
+  display: flex
+  flex-direction: column
+  padding: 50px 0
+  background: $background-color
+
+.equipment-title
+
+.equipment-wrapper
+  width: 80%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 auto
+
+.equipment-card-wrapper
+  width: 30%
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  margin-bottom: 30px
+  padding: 30px 10px
+  background: $white
+  border-radius: 3px
+  -moz-box-shadow: $box-shadow
+  -webkit-box-shadow: $box-shadow
+  box-shadow: $box-shadow
+  text-align: center
+
+.equipment-card-title
+  font-size: 30px
+  line-height: 30px
+  font-weight: 700
+  padding: 10px
+
+.equipment-card-header
+  font-size: 28px
+  line-height: 28px
+  font-weight: 300
+  padding: 10px
+
+.equipment-card-description
+  font-size: 18px
+  line-height: 18px
+  padding-bottom: 18px
+
+// Media Queries
+@media screen and (max-width: $tablet-breakpoint)
+  .equipment-wrapper
+    width: 90%
+    flex-direction: column
+
+  .equipment-card-wrapper
+    width: 100%
