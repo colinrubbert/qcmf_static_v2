@@ -5,11 +5,9 @@
   flex-direction: column
   text-align: center
   padding: 50px 0
+  background: $background-color
 
 .industry-title
-  font-size: 30px
-  line-height: 30px
-  margin-bottom: 50px
 
 .industry-icon-wrapper
   width: 100%
@@ -29,7 +27,7 @@
   flex-direction: column
   justify-content: center
   border-radius: 50%
-  background-color: #ccc
+  background-color: #ffb2b2
   height: 100px
   width: 100px
   margin: 0 auto
@@ -46,3 +44,21 @@
   padding: 20px 0
   width: 100px
   text-align: center
+
+
+// Media Queries
+
+@media screen and (max-width: $tablet-breakpoint)
+  .industry-category-wrapper
+    width: 30%
+
+  .industry-category-title
+    margin: 0 auto
+
+@media screen and (max-width: $mobile-breakpoint)
+  .industry-category-icon-circle
+    height: 80px
+    width: 80px
+
+  .industry-category-icon
+    width: 40px

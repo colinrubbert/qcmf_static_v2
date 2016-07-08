@@ -66,6 +66,16 @@ em, .text-italic {
   }
 }
 
+.title {
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto 50px auto;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #313335;
+}
+
 .button {
   width: 160px;
   padding: 10px;
@@ -101,6 +111,12 @@ em, .text-italic {
 
 .secondary-button:hover {
   background: #bc1423;
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    width: 120px;
+  }
 }
 
 #navigation {
@@ -341,12 +357,7 @@ em, .text-italic {
   flex-direction: column;
   text-align: center;
   padding: 50px 0;
-}
-
-.industry-title {
-  font-size: 30px;
-  line-height: 30px;
-  margin-bottom: 50px;
+  background: #F4F4F4;
 }
 
 .industry-icon-wrapper {
@@ -369,7 +380,7 @@ em, .text-italic {
   flex-direction: column;
   justify-content: center;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #ffb2b2;
   height: 100px;
   width: 100px;
   margin: 0 auto;
@@ -388,4 +399,64 @@ em, .text-italic {
   padding: 20px 0;
   width: 100px;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .industry-category-wrapper {
+    width: 30%;
+  }
+  .industry-category-title {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .industry-category-icon-circle {
+    height: 80px;
+    width: 80px;
+  }
+  .industry-category-icon {
+    width: 40px;
+  }
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.about-wrapper p {
+  font-size: 18px;
+  line-height: 18px;
+  padding: 10px;
+}
+
+.about-wrapper a {
+  font-weight: 700;
+  color: #ec4a59;
+  padding: 5px;
+}
+
+.lead {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  .about-wrapper {
+    width: 90%;
+    padding: 10px;
+  }
+  p {
+    padding: 10px 0;
+  }
 }

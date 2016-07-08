@@ -1,1 +1,39 @@
 // About Section Styling
+
+#about
+  display: flex
+  flex-direction: column
+  padding: 50px 0
+
+.about-title
+
+.about-wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 80%
+  margin: 0 auto
+  padding: 0 30px
+
+  p
+    font-size: 18px
+    line-height: 18px
+    padding: 10px
+
+  a
+    font-weight: 700
+    color: $secondary-color
+    padding: 5px
+
+.lead
+  font-weight: 700
+
+
+// Media Queries
+@media screen and (max-width: $tablet-breakpoint)
+  .about-wrapper
+    width: 90%
+    padding: 10px
+
+  p
+    padding: 10px 0
