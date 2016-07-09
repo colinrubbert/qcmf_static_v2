@@ -526,3 +526,52 @@ em, .text-italic {
     width: 100%;
   }
 }
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  background: #F4F4F4;
+  margin: auto;
+  padding: 30px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form {
+  margin: auto;
+}
+
+.contact-form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.contact-form-group-submit {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+label,
+input,
+textarea {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+input,
+textarea {
+  border: 2px solid #ef9099;
+  border-radius: 3px;
+}
