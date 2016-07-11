@@ -26,3 +26,17 @@
 .designed-by
   a
     color: $secondary-color
+
+// Media Queries
+@media screen and (max-width: $tablet-breakpoint)
+  .footer-container
+    width: 100%
+    flex-direction: column
+    padding: 0 30px 10px 30px
+
+  footer
+    .brand-wrapper
+      margin: 20px auto
+
+  .copyright-wrapper
+    text-align: center

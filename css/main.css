@@ -649,6 +649,22 @@ textarea {
   border-radius: 3px;
 }
 
+@media screen and (max-width: 800px) {
+  .contact-wrapper {
+    flex-direction: column;
+    width: 90%;
+  }
+  .contact-content-wrapper {
+    width: 100%;
+  }
+  #map {
+    height: 200px;
+  }
+  .contact-form-wrapper {
+    width: 100%;
+  }
+}
+
 #footer {
   width: 100%;
   background-color: #F4F4F4;
@@ -677,4 +693,18 @@ textarea {
 
 .designed-by a {
   color: #ec4a59;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-container {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 30px 10px 30px;
+  }
+  footer .brand-wrapper {
+    margin: 20px auto;
+  }
+  .copyright-wrapper {
+    text-align: center;
+  }
 }
