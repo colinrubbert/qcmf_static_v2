@@ -1,0 +1,62 @@
+// Styling for Jobs Page/Section
+
+#jobs
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.jobs-wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 80%
+  margin: 0 auto
+
+.jobs-description
+  text-align: center
+
+.jobs-form-wrapper
+  display: flex
+  flex-direction: column
+  background: $background-color
+  margin: 30px 0
+  padding: 30px
+  box-shadow: $box-shadow
+  input,
+  select
+      margin: 10px auto
+
+.jobs-form-group-header
+  font-size: 24px
+  line-height: 24px
+  padding: 20px 0
+  color: $primary-color
+
+.jobs-form-group
+  label
+    padding-left: 10px
+
+.jobs-form-sub-header
+  font-size: 18px
+  line-height: 18px
+  padding: 10px 0
+  color: $primary-color
+
+.jobs-select-wrapper
+  color: #a9a9a9
+
+.authorization
+  p
+    padding: 10px
+
+
+// Media Queries
+@media screen and (max-width: $tablet-breakpoint)
+  .jobs-form-wrapper
+    padding: 20px
+  .jobs-wrapper
+    width: 90%
+
+@media screen and (max-width: $mobile-breakpoint)
+  .jobs-form-wrapper
+    padding: 10px
