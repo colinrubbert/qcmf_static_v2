@@ -184,7 +184,7 @@ select {
   color: #446CB3;
   font-size: 24px;
   line-height: 24px;
-  margin: 28px 0 28px 15px;
+  margin: 28px 0 28px 30px;
   cursor: pointer;
 }
 
@@ -851,12 +851,15 @@ select {
   margin: 0 auto 30px auto;
 }
 
+.gallery-album-item-wrapper a {
+  margin: 0 auto;
+}
+
 .gallery-album-item {
   max-width: 100%;
   height: 300px;
   border-radius: 3px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-  margin: 0 auto;
   cursor: pointer;
 }
 
@@ -869,6 +872,9 @@ select {
   }
   .gallery-album-item-wrapper {
     width: 100%;
+  }
+  .gallery-album-item {
+    height: auto;
   }
 }
 
