@@ -11,17 +11,16 @@
 .equipment-wrapper
   width: 80%
   display: flex
-  flex-direction: row
   flex-wrap: wrap
-  justify-content: space-between
   margin: 0 auto
 
-.equipment-card-wrapper
-  width: 30%
+.equipment-card-container
   display: flex
-  flex-direction: column
-  justify-content: flex-start
-  margin-bottom: 30px
+  flex: 0 0 33.3333%
+  padding: 10px
+
+.equipment-card-wrapper
+  width: 100%
   padding: 30px 10px
   background: $white
   border-radius: 3px
@@ -53,5 +52,5 @@
     width: 90%
     flex-direction: column
 
-  .equipment-card-wrapper
-    width: 100%
+  .equipment-card-container
+    flex: 0 0 100%
