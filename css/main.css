@@ -505,6 +505,7 @@ select {
   display: flex;
   flex: 0 0 33.3333%;
   padding: 10px;
+  max-width: 33.3333%;
 }
 
 .equipment-card-wrapper {
@@ -848,6 +849,7 @@ select {
   display: flex;
   flex: 0 0 33.3333%;
   margin: 0;
+  max-width: 33.3333%;
 }
 
 .gallery-album-item-wrapper a {
