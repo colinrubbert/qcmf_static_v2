@@ -323,10 +323,18 @@
     <!-- JS Scripts & CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="js/modernizr-object-fit.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbCR5NQVLrCqWWlx9e4l0SfS4-bJkA29Q&callback=initMap">
     </script>
+    <!--[IF IE]>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          alert('Due to the lack of support, security and use of Internet Explorer browsing experience may not be optimal. If you want an optimal experience please install Google Chrome https://chrome.google.com')
+        });
+    </script>
+    <![endif]-->
   </body>
 
 </html>
