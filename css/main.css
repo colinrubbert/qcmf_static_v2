@@ -73,6 +73,9 @@ em, .text-italic {
   text-align: center;
   margin: 0 auto 50px auto;
   padding-bottom: 5px;
+}
+
+.title span {
   border-bottom: 2px solid #313335;
 }
 
@@ -398,8 +401,11 @@ select {
 
 .industry-category-icon-circle {
   display: flex;
+  display: -ms-flexbox;
   flex-direction: column;
+  -ms-flex-direction: column;
   justify-content: center;
+  -ms-flex-align: center;
   border-radius: 50%;
   background-color: #ffb2b2;
   height: 100px;
@@ -443,7 +449,9 @@ select {
 
 #about {
   display: flex;
+  display: -ms-flexbox;
   flex-direction: column;
+  -ms-flex-direction: column;
   padding: 50px 0;
 }
 
@@ -546,6 +554,7 @@ select {
   }
   .equipment-card-container {
     flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
@@ -557,8 +566,11 @@ select {
 
 .contact-wrapper {
   display: flex;
+  display: -ms-flexbox;
   flex-direction: row;
+  -ms-flex-direction: row;
   justify-content: space-between;
+  -ms-flex-align: center;
   width: 80%;
   background: #F4F4F4;
   margin: auto;
@@ -570,7 +582,9 @@ select {
 .contact-content-wrapper {
   width: 50%;
   display: flex;
+  display: -ms-flexbox;
   flex-direction: column;
+  -ms-flex-direction: column;
   justify-content: space-between;
   padding: 30px;
 }
@@ -625,13 +639,15 @@ select {
 .contact-form-wrapper {
   width: 50%;
   display: flex;
+  display: -ms-flexbox;
   flex-direction: column;
-  justify-content: center;
+  -ms-flex-direction: column;
   padding: 30px;
 }
 
 .contact-form-wrapper .contact-form-title {
   height: 100%;
+  margin-bottom: 20px;
 }
 
 .contact-form-wrapper .contact-form-title h3 {
@@ -881,6 +897,7 @@ select {
   }
   .gallery-album-item-wrapper {
     flex: 0 0 100%;
+    max-width: 100%;
   }
   .gallery-album-item-wrapper a {
     padding: 0 5px 10px 5px;

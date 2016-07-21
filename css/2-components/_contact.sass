@@ -8,8 +8,11 @@
 
 .contact-wrapper
   display: flex
+  display: -ms-flexbox
   flex-direction: row
+  -ms-flex-direction: row
   justify-content: space-between
+  -ms-flex-align: center
   width: 80%
   background: $background-color
   margin: auto
@@ -20,7 +23,9 @@
 .contact-content-wrapper
   width: 50%
   display: flex
+  display: -ms-flexbox
   flex-direction: column
+  -ms-flex-direction: column
   justify-content: space-between
   padding: 30px
   i
@@ -63,12 +68,14 @@
 .contact-form-wrapper
   width: 50%
   display: flex
+  display: -ms-flexbox
   flex-direction: column
-  justify-content: center
+  -ms-flex-direction: column
   padding: 30px
 
   .contact-form-title
     height: 100%
+    margin-bottom: 20px
     h3
       font-weight: 300
 
