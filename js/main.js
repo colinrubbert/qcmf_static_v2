@@ -55,3 +55,17 @@ function initMap() {
     title: 'QCMF'
   });
 }
+
+// Function to run Object-Fit Modernizr for IE functionality
+if ( ! Modernizr.objectfit ) {
+  $('.gallery-album-item-wrapper').each(function () {
+    var $container = $(this),
+        imgUrl = $container.find('img').prop('src');
+    if (imgUrl) {
+      $container
+        .css('backgroundImage', 'url(' + imgUrl + ')')
+        .addClass('compat-object-fit');
+        $('.gallery-album-item').hide();
+    }
+  });
+}
