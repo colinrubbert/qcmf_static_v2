@@ -623,7 +623,7 @@ select {
 
 .contact-email-wrapper {
   display: block;
-  display-padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .contact-email {
