@@ -1,0 +1,64 @@
+/*  Internet Explorer 9 and under styling fallback  */
+
+#ie {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/*  Warning Box Section  */
+
+.warning-box {
+  padding: 20px;
+  background: #ec4a59;
+  color: #fafafa;
+}
+
+.browser-list {
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.browser-list li {
+  display: inline-block;
+  text-align: center;
+}
+
+.browser-list a {
+  font-size: 18px;
+}
+
+/*  Global Elements  */
+
+.ie-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/*  Branding Section  */
+
+.ie-brand-wrapper {
+  margin: 60px 0 30px 0;
+}
+
+.ie-brand-logo {
+  width: 100px;
+  height: auto;
+}
+
+.ie-brand-title {
+  display: inline-block;
+  font-size: 36px;
+}
+
+/*  Contact Section  */
+
+.ie-contact-wrapper {
+  margin: 30px 0 60px 0;
+}
+
+/*  Map Section  */
+
+.ie-map-wrapper {
+  margin: 0 auto 60px auto;
+}
