@@ -6,12 +6,14 @@
 #navigation
   width: 100%
   min-height: 80px
+  z-index: 10
 
 .navigation-wrapper
   display: flex
   flex-direction: row
   flex-wrap: nowrap
   justify-content: space-between
+  background: $white
 
 .brand-wrapper
   display: flex
@@ -57,42 +59,52 @@
   height: 30px
   width: auto
 
-// Mobile navigation
-#mobile-navigation
-  position: fixed
-  width: 100%
-  display: none
-  background: $white
-
-
-.mobile-navigation-wrapper
-  width: 100%
-  height: 100vh
-
-.mobile-navigation-links-wrapper
-  display: flex
-  flex-direction: column
-  justify-content: center
-  text-align: center
-
-
 // Media Queries
 
 @media screen and (max-width: $tablet-breakpoint)
   // Desktop Navigation
+
+  .navigation-wrapper.fixed
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 30
+    .brand-wrapper
+      z-index: 30
+
   .brand-wrapper
     margin-left: 20px
 
   .brand-title
     display: none
 
+  .navigation-links-wrapper.closed
+    left: -100%
+
   .navigation-links-wrapper
-    display: none
+    flex-direction: column
+    position: fixed
+    padding-top: 80px
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    justify-content: flex-start
+    text-align: center
+    background: $white
+    transition: all 600ms ease-in-out
+    z-index: 20
 
   .navigation-mobile-toggle
     display: block
     margin-right: 20px
     text-align: right
+    z-index: 30
+
+  .navigation-mobile-toggle.fixed
+    position: fixed
+    top: 0
+    right: 0
 
   .nav-link
     margin: 30px 0

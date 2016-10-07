@@ -14,28 +14,11 @@
   </head>
 
   <body>
-    <!-- Start Mobile Navigation -->
-    <nav id="mobile-navigation">
-      <div class="container">
-        <div class="navigation-mobile-toggle">
-          <img src="../images/menu.svg" alt="Mobile Navigation Menu Toggle" class="navigation-mobile-toggle-image">
-        </div>
-        <div class="mobile-navigation-wrapper">
-          <div class="mobile-navigation-links-wrapper">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/gallery.html" class="nav-link">Gallery</a>
-            <a href="/jobs.html" class="nav-link">Jobs</a>
-            <a href="/contact.html" class="nav-link">Contact</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- End Mobile Navigation -->
 
-    <!-- Start Desktop Navigation -->
+    <!-- Start Navigation -->
     <nav id="navigation">
       <div class="container">
-        <div class="navigation-wrapper">
+        <div class="navigation-wrapper" id="navigation-wrapper">
           <div class="brand-wrapper">
             <div class="brand-logo">
               <img src="../images/logo.png" alt="Quality Custom Metal Fabrication Logo" class="brand-image">
@@ -43,19 +26,20 @@
             <div class="brand-title">
               Quality Custom <br> Metal Fabrication</div>
           </div>
-          <div class="navigation-links-wrapper">
+          <div class="navigation-links-wrapper closed" id="navigation-links-wrapper">
             <a href="/" class="nav-link">Home</a>
             <a href="/gallery.html" class="nav-link">Gallery</a>
             <a href="/jobs.html" class="nav-link">Jobs</a>
             <a href="/contact.html" class="nav-link">Contact</a>
           </div>
-          <div class="navigation-mobile-toggle">
+          <div class="navigation-mobile-toggle" id="navigation-mobile-toggle" onClick="toggleMenu()">
             <img src="../images/menu.svg" alt="Mobile Navigation Menu Toggle" class="navigation-mobile-toggle-image">
           </div>
         </div>
       </div>
     </nav>
     <!-- End Desktop Navigation -->
+
     <!-- Start Contact Section -->
     <section id="contact">
       <div class="title contact-title"><span>Contact Us</span></div>

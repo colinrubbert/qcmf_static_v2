@@ -1,14 +1,17 @@
 // jQuery
 $(function(){
-  mobileNavigationToggle();
   galleryAlbumSwitcher();
 });
 
 // Function to slide open and close the mobile navigation menu
-function mobileNavigationToggle() {
-  $('.navigation-mobile-toggle').click(function() {
-    $('#mobile-navigation').slideToggle(300);
-  });
+var toggleButton = document.getElementById("navigation-mobile-toggle");
+var mobileMenu = document.getElementById("navigation-links-wrapper");
+var navigationWrapper = document.getElementById("navigation-wrapper");
+
+function toggleMenu() {
+  mobileMenu.classList.toggle("closed");
+  toggleButton.classList.toggle("fixed");
+  navigationWrapper.classList.toggle("fixed");
 }
 
 // Function to choose which gallery to view
