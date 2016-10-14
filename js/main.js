@@ -4,12 +4,14 @@ var toggleButton = document.getElementById("navigation-mobile-toggle");
 var mobileMenu = document.getElementById("navigation-links-wrapper");
 var navigationWrapper = document.getElementById("navigation-wrapper");
 var navigation = document.getElementById("navigation");
+var body = document.body;
 
 function toggleMenu() {
   mobileMenu.classList.toggle("closed");
   toggleButton.classList.toggle("fixed");
   navigationWrapper.classList.toggle("fixed");
   navigation.classList.toggle("fixed");
+  body.classList.toggle("fixed");
 }
 
 // jQuery
