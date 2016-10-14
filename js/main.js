@@ -1,18 +1,21 @@
-// jQuery
-$(function(){
-  galleryAlbumSwitcher();
-});
 
 // Function to slide open and close the mobile navigation menu
 var toggleButton = document.getElementById("navigation-mobile-toggle");
 var mobileMenu = document.getElementById("navigation-links-wrapper");
 var navigationWrapper = document.getElementById("navigation-wrapper");
+var navigation = document.getElementById("navigation");
 
 function toggleMenu() {
   mobileMenu.classList.toggle("closed");
   toggleButton.classList.toggle("fixed");
   navigationWrapper.classList.toggle("fixed");
+  navigation.classList.toggle("fixed");
 }
+
+// jQuery
+$(function(){
+  galleryAlbumSwitcher();
+});
 
 // Function to choose which gallery to view
 function galleryAlbumSwitcher() {
